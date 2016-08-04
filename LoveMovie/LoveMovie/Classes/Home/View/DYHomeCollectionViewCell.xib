@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DYHomeCollectionViewCell" id="gTV-IL-0wX" customClass="DYHomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gP9-Wy-pMB">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="Zte-ce-GHv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="变形金刚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyL-i8-ovD">
+                        <rect key="frame" x="0.0" y="143" width="120" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Xnn-l6-V9b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8n-KM-cwQ">
+                        <rect key="frame" x="22" y="166" width="75" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="7Xu-3Q-jqt"/>
+                            <constraint firstAttribute="height" constant="29" id="9Qu-fI-Uvs"/>
+                        </constraints>
+                        <state key="normal" title="购票" backgroundImage="icon_hot_show_buy">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bre-7P-68f">
+                        <rect key="frame" x="92" y="116" width="28" height="24"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.61176470589999998" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="hK1-b5-pux"/>
+                            <constraint firstAttribute="height" constant="24" id="kQL-SI-iy0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" IMAX 3D " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-Z4-owx">
+                        <rect key="frame" x="51.5" y="0.0" width="68.5" height="18"/>
+                        <color key="backgroundColor" red="0.2627450980392157" green="0.69411764705882351" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Z8n-KM-cwQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="3gh-zW-c3j"/>
+                <constraint firstItem="gP9-Wy-pMB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B0G-VD-AET"/>
+                <constraint firstItem="Z8n-KM-cwQ" firstAttribute="top" secondItem="fyL-i8-ovD" secondAttribute="bottom" id="BsJ-JH-hr4"/>
+                <constraint firstItem="Bre-7P-68f" firstAttribute="bottom" secondItem="gP9-Wy-pMB" secondAttribute="bottom" id="J0P-hq-p0j"/>
+                <constraint firstItem="fyL-i8-ovD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LnW-RS-Gif"/>
+                <constraint firstItem="Qif-Z4-owx" firstAttribute="top" secondItem="gP9-Wy-pMB" secondAttribute="top" id="Paj-86-7fQ"/>
+                <constraint firstAttribute="trailing" secondItem="gP9-Wy-pMB" secondAttribute="trailing" id="aE7-cO-bhH"/>
+                <constraint firstItem="gP9-Wy-pMB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cZs-u3-ig7"/>
+                <constraint firstAttribute="trailing" secondItem="fyL-i8-ovD" secondAttribute="trailing" id="idJ-ui-SIX"/>
+                <constraint firstItem="Qif-Z4-owx" firstAttribute="trailing" secondItem="gP9-Wy-pMB" secondAttribute="trailing" id="kx9-Iu-8OH"/>
+                <constraint firstItem="fyL-i8-ovD" firstAttribute="top" secondItem="gP9-Wy-pMB" secondAttribute="bottom" constant="3" id="rpl-sd-QvO"/>
+                <constraint firstItem="Bre-7P-68f" firstAttribute="trailing" secondItem="gP9-Wy-pMB" secondAttribute="trailing" id="xHv-4y-aia"/>
+                <constraint firstAttribute="bottom" secondItem="Z8n-KM-cwQ" secondAttribute="bottom" constant="5" id="znO-yp-ZgK"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BsJ-JH-hr4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="isIMAX3D" destination="Qif-Z4-owx" id="Kv9-s5-c3k"/>
+                <outlet property="movieIcon" destination="gP9-Wy-pMB" id="S0I-kb-5v1"/>
+                <outlet property="movieName" destination="fyL-i8-ovD" id="S35-2h-XBh"/>
+                <outlet property="rating" destination="Bre-7P-68f" id="dVR-Yh-e1j"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_hot_show_buy" width="75" height="29"/>
+    </resources>
+</document>

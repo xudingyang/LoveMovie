@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="showingMovieCell" rowHeight="208" id="KGk-i7-Jjw" customClass="DYShowingMovieTableVCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="207.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百鸟朝凤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spl-GN-RnH" userLabel="电影名字">
+                        <rect key="frame" x="105" y="10" width="64" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="S0z-uI-tL2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB2-70-aJn" userLabel="电影评分">
+                        <rect key="frame" x="176" y="10" width="20.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.61176470588235299" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天分不重要，重要的是品行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-07-4zU" userLabel="特别评论">
+                        <rect key="frame" x="105" y="37" width="180" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99215686274509807" green="0.63921568627450975" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月6日上映" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av0-ZF-no0" userLabel="上映日期">
+                        <rect key="frame" x="105" y="61" width="73.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日76家影院上映957场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-Rx-swY">
+                        <rect key="frame" x="105" y="84" width="154" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pS-ig-8DB" userLabel="3D标记">
+                        <rect key="frame" x="105" y="107" width="215" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_hot_show_IMAX" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-09-ASz">
+                                <rect key="frame" x="24" y="2" width="34" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Tuv-ko-TOr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hot_show_DMAX" translatesAutoresizingMaskIntoConstraints="NO" id="bKz-jk-Xxt">
+                                <rect key="frame" x="58" y="2" width="48" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Lqz-qA-k1b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hot_show_3D" translatesAutoresizingMaskIntoConstraints="NO" id="1vE-Bf-hEM">
+                                <rect key="frame" x="0.0" y="2" width="24" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="s21-BQ-IHH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1vE-Bf-hEM" firstAttribute="centerY" secondItem="7pS-ig-8DB" secondAttribute="centerY" id="0YU-BS-JAg"/>
+                            <constraint firstItem="Nq7-09-ASz" firstAttribute="top" secondItem="7pS-ig-8DB" secondAttribute="top" id="2o7-Yp-5uX"/>
+                            <constraint firstAttribute="bottom" secondItem="Nq7-09-ASz" secondAttribute="bottom" id="6fS-HY-ICT"/>
+                            <constraint firstItem="bKz-jk-Xxt" firstAttribute="leading" secondItem="Nq7-09-ASz" secondAttribute="trailing" id="Eav-1e-cwG"/>
+                            <constraint firstItem="bKz-jk-Xxt" firstAttribute="centerY" secondItem="7pS-ig-8DB" secondAttribute="centerY" id="Mum-rc-pnL"/>
+                            <constraint firstAttribute="height" constant="20" id="OzK-jz-rX9"/>
+                            <constraint firstItem="Nq7-09-ASz" firstAttribute="leading" secondItem="1vE-Bf-hEM" secondAttribute="trailing" id="TCv-gh-ASD"/>
+                            <constraint firstItem="1vE-Bf-hEM" firstAttribute="leading" secondItem="7pS-ig-8DB" secondAttribute="leading" id="gWi-W7-MqV"/>
+                            <constraint firstItem="Nq7-09-ASz" firstAttribute="centerY" secondItem="7pS-ig-8DB" secondAttribute="centerY" id="zTU-qD-qHa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2o7-Yp-5uX"/>
+                                <exclude reference="6fS-HY-ICT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I39-UO-meH" userLabel="购票/预售按钮" customClass="DYNoHighlitedButton">
+                        <rect key="frame" x="330" y="101" width="69" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="Uiw-a2-Hvz"/>
+                            <constraint firstAttribute="height" constant="29" id="fXc-d1-oPt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="购票" backgroundImage="icon_hot_show_buy"/>
+                        <connections>
+                            <action selector="buyTicketClick" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1gw-X2-f6G"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z9P-Q5-hxN" userLabel="电影图片">
+                        <rect key="frame" x="10" y="10" width="80" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="Qo2-8A-sBY"/>
+                            <constraint firstAttribute="width" constant="80" id="a9U-T6-igC"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hotshow_new_movie" translatesAutoresizingMaskIntoConstraints="NO" id="GKg-op-pYO" userLabel="今日上映">
+                        <rect key="frame" x="10" y="10" width="39" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39" id="H0V-vD-GOA"/>
+                            <constraint firstAttribute="height" constant="39" id="x9K-Uo-07o"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="spl-GN-RnH" firstAttribute="top" secondItem="Z9P-Q5-hxN" secondAttribute="top" id="1F7-0T-zHq"/>
+                    <constraint firstItem="av0-ZF-no0" firstAttribute="leading" secondItem="uz3-07-4zU" secondAttribute="leading" id="1Ff-DX-Epj"/>
+                    <constraint firstItem="tB2-70-aJn" firstAttribute="bottom" secondItem="spl-GN-RnH" secondAttribute="bottom" id="5WL-LV-fWe"/>
+                    <constraint firstItem="9YP-Rx-swY" firstAttribute="top" secondItem="av0-ZF-no0" secondAttribute="bottom" constant="6" id="9KC-Wn-gEe"/>
+                    <constraint firstItem="uz3-07-4zU" firstAttribute="leading" secondItem="spl-GN-RnH" secondAttribute="leading" id="B1d-Av-1iX"/>
+                    <constraint firstItem="spl-GN-RnH" firstAttribute="leading" secondItem="Z9P-Q5-hxN" secondAttribute="trailing" constant="15" id="B4L-a1-NAn"/>
+                    <constraint firstItem="GKg-op-pYO" firstAttribute="top" secondItem="Z9P-Q5-hxN" secondAttribute="top" id="Bez-aN-Vnm"/>
+                    <constraint firstItem="I39-UO-meH" firstAttribute="leading" secondItem="7pS-ig-8DB" secondAttribute="trailing" constant="10" id="Cyi-vr-j8j"/>
+                    <constraint firstItem="9YP-Rx-swY" firstAttribute="leading" secondItem="av0-ZF-no0" secondAttribute="leading" id="FRO-Js-Y1a"/>
+                    <constraint firstItem="tB2-70-aJn" firstAttribute="leading" secondItem="spl-GN-RnH" secondAttribute="trailing" constant="7" id="ROO-GZ-Fxb"/>
+                    <constraint firstItem="GKg-op-pYO" firstAttribute="leading" secondItem="Z9P-Q5-hxN" secondAttribute="leading" id="XBj-6Z-tZm"/>
+                    <constraint firstItem="7pS-ig-8DB" firstAttribute="leading" secondItem="9YP-Rx-swY" secondAttribute="leading" id="Yxm-DJ-LeP"/>
+                    <constraint firstAttribute="trailing" secondItem="I39-UO-meH" secondAttribute="trailing" constant="10" id="fSO-12-3IS"/>
+                    <constraint firstItem="I39-UO-meH" firstAttribute="bottom" secondItem="Z9P-Q5-hxN" secondAttribute="bottom" id="fka-el-6lD"/>
+                    <constraint firstItem="7pS-ig-8DB" firstAttribute="top" secondItem="9YP-Rx-swY" secondAttribute="bottom" constant="6" id="gLl-P7-DYI"/>
+                    <constraint firstItem="uz3-07-4zU" firstAttribute="top" secondItem="tB2-70-aJn" secondAttribute="bottom" constant="6" id="htH-sg-3Tc"/>
+                    <constraint firstItem="Z9P-Q5-hxN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jEU-03-2HQ"/>
+                    <constraint firstItem="Z9P-Q5-hxN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ki6-Aw-Lad"/>
+                    <constraint firstItem="av0-ZF-no0" firstAttribute="top" secondItem="uz3-07-4zU" secondAttribute="bottom" constant="6" id="lBl-kE-qwH"/>
+                    <constraint firstItem="tB2-70-aJn" firstAttribute="top" secondItem="spl-GN-RnH" secondAttribute="top" id="tWh-UH-cdN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IMaxTagView" destination="7pS-ig-8DB" id="wzT-fl-BMA"/>
+                <outlet property="beOnDateLabel" destination="av0-ZF-no0" id="wi5-uf-9Yr"/>
+                <outlet property="butTicketButton" destination="I39-UO-meH" id="1PE-RS-YiV"/>
+                <outlet property="isShowTodayIcon" destination="GKg-op-pYO" id="JJP-JG-U3x"/>
+                <outlet property="movieIcon" destination="Z9P-Q5-hxN" id="sqO-ML-y1Y"/>
+                <outlet property="movieNameLabel" destination="spl-GN-RnH" id="x0B-mf-1m3"/>
+                <outlet property="movieScoreLabel" destination="tB2-70-aJn" id="pek-yT-3kD"/>
+                <outlet property="showCinameLabel" destination="9YP-Rx-swY" id="OeH-ep-nLx"/>
+                <outlet property="specialCommentLabel" destination="uz3-07-4zU" id="ji6-A5-dey"/>
+                <outlet property="tag3D" destination="1vE-Bf-hEM" id="QHC-eC-sYF"/>
+                <outlet property="tag3DWidth" destination="s21-BQ-IHH" id="xCO-5c-Vci"/>
+                <outlet property="tagDIMAXWidth" destination="Lqz-qA-k1b" id="Maz-M7-cLT"/>
+                <outlet property="tagDMAX" destination="bKz-jk-Xxt" id="Djn-li-ZmA"/>
+                <outlet property="tagIMAX" destination="Nq7-09-ASz" id="26T-4f-ZU3"/>
+                <outlet property="tagIMAXWidth" destination="Tuv-ko-TOr" id="JZ6-7s-K4E"/>
+            </connections>
+            <point key="canvasLocation" x="510.5" y="266"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_hot_show_3D" width="20" height="15"/>
+        <image name="icon_hot_show_DMAX" width="44" height="15"/>
+        <image name="icon_hot_show_IMAX" width="30" height="15"/>
+        <image name="icon_hot_show_buy" width="75" height="29"/>
+        <image name="icon_hotshow_new_movie" width="39" height="39"/>
+    </resources>
+</document>

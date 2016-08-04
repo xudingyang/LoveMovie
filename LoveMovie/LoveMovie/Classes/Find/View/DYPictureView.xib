@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="F3O-r0-AWV" customClass="DYPictureView">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k1c-Rn-GZu" userLabel="图片">
+                    <rect key="frame" x="10" y="42" width="80" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="VxJ-Ax-OiG"/>
+                        <constraint firstAttribute="height" constant="90" id="uIi-7L-9hV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好大家好我来啦的解放军的借口借口一样一样" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnH-tO-KGA" userLabel="新闻标题">
+                    <rect key="frame" x="100" y="42" width="307" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FDF-c7-iX1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-05-18 18:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKa-BK-12r">
+                    <rect key="frame" x="100" y="112" width="118" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ssT-hz-zTn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYy-Lv-7aw">
+                    <rect key="frame" x="238" y="112" width="28" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="455" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNo-ew-TXr">
+                    <rect key="frame" x="268" y="112" width="26" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="放顶顶顶顶顶是事实上事实上事实上" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-Y1-sNv" userLabel="新闻概要">
+                    <rect key="frame" x="100" y="87" width="307" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="QMa-CM-ViW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zvk-Y1-sNv" firstAttribute="trailing" secondItem="PnH-tO-KGA" secondAttribute="trailing" id="2aW-3f-QPS"/>
+                <constraint firstItem="zvk-Y1-sNv" firstAttribute="top" secondItem="PnH-tO-KGA" secondAttribute="bottom" constant="5" id="5ga-Ht-yv7"/>
+                <constraint firstItem="k1c-Rn-GZu" firstAttribute="centerY" secondItem="F3O-r0-AWV" secondAttribute="centerY" id="LFe-1C-gfu"/>
+                <constraint firstItem="qYy-Lv-7aw" firstAttribute="top" secondItem="gKa-BK-12r" secondAttribute="top" id="QfP-xg-ZpS"/>
+                <constraint firstItem="qYy-Lv-7aw" firstAttribute="leading" secondItem="gKa-BK-12r" secondAttribute="trailing" constant="20" id="U1c-a2-ckD"/>
+                <constraint firstItem="k1c-Rn-GZu" firstAttribute="leading" secondItem="F3O-r0-AWV" secondAttribute="leading" constant="10" id="XuC-5C-LTa"/>
+                <constraint firstItem="PnH-tO-KGA" firstAttribute="top" secondItem="k1c-Rn-GZu" secondAttribute="top" id="Z22-F6-OqG"/>
+                <constraint firstItem="gKa-BK-12r" firstAttribute="top" secondItem="zvk-Y1-sNv" secondAttribute="bottom" constant="5" id="cQU-uV-mYd"/>
+                <constraint firstItem="PnH-tO-KGA" firstAttribute="leading" secondItem="k1c-Rn-GZu" secondAttribute="trailing" constant="10" id="i2b-lS-2gT"/>
+                <constraint firstItem="zvk-Y1-sNv" firstAttribute="leading" secondItem="PnH-tO-KGA" secondAttribute="leading" id="oZk-U8-lZv"/>
+                <constraint firstItem="qYy-Lv-7aw" firstAttribute="bottom" secondItem="gKa-BK-12r" secondAttribute="bottom" id="s4j-zN-A5p"/>
+                <constraint firstItem="jNo-ew-TXr" firstAttribute="top" secondItem="qYy-Lv-7aw" secondAttribute="top" id="u32-wv-tYu"/>
+                <constraint firstItem="jNo-ew-TXr" firstAttribute="bottom" secondItem="qYy-Lv-7aw" secondAttribute="bottom" id="vp4-Xc-H1F"/>
+                <constraint firstItem="jNo-ew-TXr" firstAttribute="leading" secondItem="qYy-Lv-7aw" secondAttribute="trailing" constant="2" id="xcd-y1-dwK"/>
+                <constraint firstAttribute="trailing" secondItem="PnH-tO-KGA" secondAttribute="trailing" constant="10" id="xrV-gn-kBd"/>
+                <constraint firstItem="gKa-BK-12r" firstAttribute="leading" secondItem="zvk-Y1-sNv" secondAttribute="leading" id="ykH-gD-A10"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentsCount" destination="jNo-ew-TXr" id="xVl-q7-aIW"/>
+                <outlet property="iconView" destination="k1c-Rn-GZu" id="gfP-uS-pFx"/>
+                <outlet property="newsContent" destination="zvk-Y1-sNv" id="wed-ab-r5Y"/>
+                <outlet property="newsTitle" destination="PnH-tO-KGA" id="43y-Il-p0a"/>
+                <outlet property="publishDate" destination="gKa-BK-12r" id="KEL-z2-8hW"/>
+            </connections>
+            <point key="canvasLocation" x="512.5" y="249.5"/>
+        </view>
+    </objects>
+</document>

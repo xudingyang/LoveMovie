@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  LoveMovie
+//
+//  Created by xudingyang on 16/5/10.
+//  Copyright © 2016年 许定阳. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 调试时候，用此代替NSLog
+#ifdef DEBUG
+#define DYLog(...) NSLog(__VA_ARGS__)
+#else
+#define DYLog(...)
+#endif
+
+
+// 常用宏
+#define DYRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define DYGlobalBackgroundColor DYRGBColor(235, 235, 235)
+
+#define DYScreenWidth [UIScreen mainScreen].bounds.size.width
+#define DYScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 常用头文件
+#import "UIView+DYExt.h"
+#import "DYConst.h"
+
+
+
+
+
+#endif /* PrefixHeader_pch */

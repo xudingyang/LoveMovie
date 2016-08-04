@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DAI-Ra-nj9" customClass="DYTrailerHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="273"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-nK-xjP" userLabel="大图片">
+                    <rect key="frame" x="0.0" y="0.0" width="471" height="273"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-Jg-haq">
+                    <rect key="frame" x="0.0" y="233" width="471" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="lnp-FC-X8G">
+                            <rect key="frame" x="0.0" y="0.0" width="471" height="40"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_preview_play" translatesAutoresizingMaskIntoConstraints="NO" id="dfi-cY-YqP" userLabel="播放按钮">
+                            <rect key="frame" x="431" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Xdm-2W-0cX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《超能敢死队》最新预告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-Ls-F9C">
+                            <rect key="frame" x="136.5" y="9.5" width="198" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lnp-FC-X8G" firstAttribute="top" secondItem="TUp-Jg-haq" secondAttribute="top" id="0QK-ag-brF"/>
+                        <constraint firstAttribute="trailing" secondItem="dfi-cY-YqP" secondAttribute="trailing" id="D55-xE-Enl"/>
+                        <constraint firstAttribute="bottom" secondItem="lnp-FC-X8G" secondAttribute="bottom" id="GIg-pJ-XhB"/>
+                        <constraint firstItem="vhV-Ls-F9C" firstAttribute="centerX" secondItem="TUp-Jg-haq" secondAttribute="centerX" id="KeG-xS-W39"/>
+                        <constraint firstAttribute="height" constant="40" id="R2w-xA-GI0"/>
+                        <constraint firstAttribute="trailing" secondItem="lnp-FC-X8G" secondAttribute="trailing" id="dsl-PU-rYB"/>
+                        <constraint firstItem="vhV-Ls-F9C" firstAttribute="centerY" secondItem="TUp-Jg-haq" secondAttribute="centerY" id="fqM-FA-1tM"/>
+                        <constraint firstItem="dfi-cY-YqP" firstAttribute="top" secondItem="TUp-Jg-haq" secondAttribute="top" id="iOL-4N-oZN"/>
+                        <constraint firstAttribute="bottom" secondItem="dfi-cY-YqP" secondAttribute="bottom" id="j95-yt-XOV"/>
+                        <constraint firstItem="lnp-FC-X8G" firstAttribute="leading" secondItem="TUp-Jg-haq" secondAttribute="leading" id="zEm-ok-ICH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mk6-nK-xjP" secondAttribute="trailing" id="UID-lG-Mfo"/>
+                <constraint firstItem="TUp-Jg-haq" firstAttribute="leading" secondItem="DAI-Ra-nj9" secondAttribute="leading" id="csb-St-Pp5"/>
+                <constraint firstAttribute="trailing" secondItem="TUp-Jg-haq" secondAttribute="trailing" id="dqj-b2-NDZ"/>
+                <constraint firstItem="Mk6-nK-xjP" firstAttribute="leading" secondItem="DAI-Ra-nj9" secondAttribute="leading" id="eZW-Lg-iQ9"/>
+                <constraint firstAttribute="bottom" secondItem="Mk6-nK-xjP" secondAttribute="bottom" id="gef-Wg-9G0"/>
+                <constraint firstAttribute="bottom" secondItem="TUp-Jg-haq" secondAttribute="bottom" id="nL6-Os-xk8"/>
+                <constraint firstItem="Mk6-nK-xjP" firstAttribute="top" secondItem="DAI-Ra-nj9" secondAttribute="top" id="zvQ-4L-kYm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigIconView" destination="Mk6-nK-xjP" id="XGF-cf-7br"/>
+                <outlet property="titleLabel" destination="vhV-Ls-F9C" id="jKW-Wg-MG2"/>
+            </connections>
+            <point key="canvasLocation" x="688.5" y="285.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bj" width="320" height="480"/>
+        <image name="icon_preview_play" width="29" height="29"/>
+    </resources>
+</document>
