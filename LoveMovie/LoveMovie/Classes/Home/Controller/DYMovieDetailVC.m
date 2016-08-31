@@ -4,7 +4,8 @@
 //
 //  Created by xudingyang on 16/5/21.
 //  Copyright © 2016年 许定阳. All rights reserved.
-//
+//  本来这里应该是两个url就搞定的，但是这里的url不能访问，于是采取曲线救国的方式，
+//  把从别处获得的电影信息拼凑到这里来，效果勉强可以。
 
 #import "DYMovieDetailVC.h"
 #import "DYMovieHeader.h"
@@ -77,7 +78,7 @@
 - (void)setupContentScrollView{
     UIScrollView *contentScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:contentScrollView];
-    contentScrollView.backgroundColor = [UIColor redColor];
+//    contentScrollView.backgroundColor = [UIColor redColor];
     
     self.contentScrollView = contentScrollView;
     self.automaticallyAdjustsScrollViewInsets = NO;

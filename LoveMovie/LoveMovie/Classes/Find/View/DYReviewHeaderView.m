@@ -9,6 +9,7 @@
 #import "DYReviewHeaderView.h"
 #import "DYReview.h"
 #import <UIImageView+WebCache.h>
+#import "DYMovieInReview.h"
 
 @interface DYReviewHeaderView ()
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
@@ -30,6 +31,14 @@
     self.movieNameLabel.text = review.movieName;
     self.commentLabel.text = review.title;
     [self.posterView sd_setImageWithURL:[NSURL URLWithString:review.posterUrl] placeholderImage:[UIImage imageNamed:@"order_review_upload_img"]];
+    
+    UIGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickReview)];
+    [self addGestureRecognizer:ges];
+}
+
+- (void)clickReview {
+    
+    !self.tapReview ? : self.tapReview(self.review.reviewID, self.review.movieName);
 }
 
 @end

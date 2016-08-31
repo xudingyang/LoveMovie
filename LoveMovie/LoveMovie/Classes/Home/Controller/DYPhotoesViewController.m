@@ -12,6 +12,7 @@
 #import "DYHotMovie.h"
 #import <UIImageView+WebCache.h>
 #import "DYPhotoCollectionViewCell.h"
+#import "DYShowPhotoBaseView.h"
 
 @interface DYPhotoesViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 /** 指示器indicatorScrollView */
@@ -27,7 +28,10 @@
 
 /** photoArray当前正在显示的该类照片 */
 @property (strong, nonatomic) NSArray *photoArray;
-
+/** 放置图片的url */
+@property (strong, nonatomic) NSArray<NSString *> *iconArray;
+/** rectArray 盛放位置的数组 */
+@property (strong, nonatomic) NSArray<NSString *> *rectArray;
 @end
 
 static NSString * const identifier = @"photoCollectionViewCell";
@@ -40,6 +44,20 @@ static NSString * const identifier = @"photoCollectionViewCell";
         _buttons = [NSMutableArray array];
     }
     return _buttons;
+}
+
+- (NSArray *)photoArray {
+    if (_photoArray == nil) {
+        _photoArray = [NSArray array];
+    }
+    return _photoArray;
+}
+
+- (NSArray<NSString *> *)iconArray {
+    if (_iconArray == nil) {
+        _iconArray = [NSArray array];
+    }
+    return _iconArray;
 }
 
 - (void)viewDidLoad {
@@ -166,6 +184,13 @@ static NSString * const identifier = @"photoCollectionViewCell";
     }
     [self.indicatorScrollView setContentOffset:offset animated:YES];
     
+    NSMutableArray<NSString *> *mutIcons = [NSMutableArray<NSString *> array];
+    for (NSInteger index = 0; index < self.photoArray.count; index++) {
+        DYPotoes *photo = self.photoArray[index];
+        [mutIcons addObject:photo.image];
+    }
+    self.iconArray = mutIcons;
+    [self countCellRect];
 }
 
 #pragma mark - 设置collectionView
@@ -198,9 +223,61 @@ static NSString * const identifier = @"photoCollectionViewCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    DYShowPictureViewController *vc = [[DYShowPictureViewController alloc] init];
-//    vc.photoes = self.photoArray;
-//    [self presentViewController:vc animated:YES completion:nil];
+
+    DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    if (cell.imge.image == nil) return;
+    [self scrollViewDidScroll:self.collectionView];
+    DYShowPhotoBaseView *baseView = [[DYShowPhotoBaseView alloc] initWithFrame:self.view.bounds];
+    baseView.iconArray = self.iconArray;
+    baseView.rectArray = self.rectArray;
+    baseView.collectionView = self.collectionView;
+    baseView.index = indexPath.row;
+    [[UIApplication sharedApplication].keyWindow addSubview:baseView];
+    
+    baseView.backgroundColor = [UIColor blackColor];
+}
+
+- (void)countCellRect {
+    NSMutableArray<NSString *> *array = [NSMutableArray<NSString *> array];
+    for (NSInteger index = 0; index < self.photoArray.count; index++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        UIWindow* window = [UIApplication sharedApplication].keyWindow;
+        CGRect rectInWindow = [cell convertRect:cell.imge.frame toView:window];
+        [array addObject:NSStringFromCGRect(rectInWindow)];
+    }
+    self.rectArray = array;
+}
+
+// 计算滑动之时，cell的位置
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+//    NSMutableArray<NSString *> *array = [NSMutableArray<NSString *> array];
+//    for (NSInteger index = 0; index < self.photoArray.count; index++) {
+//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+//        DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+//        UIWindow* window = [UIApplication sharedApplication].keyWindow;
+//        CGRect rectInWindow = [cell convertRect:cell.imge.frame toView:window];
+//        [array addObject:NSStringFromCGRect(rectInWindow)];
+//    }
+//    self.rectArray = array;
+    [self countCellRect];
+}
+
+// 此方法会在cell显示出来后再执行，所以这里可以计算滑动之前cell的位置
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+//    NSMutableArray<NSString *> *array = [NSMutableArray<NSString *> array];
+//    for (NSInteger index = 0; index < self.photoArray.count; index++) {
+//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+//        DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+//        UIWindow* window = [UIApplication sharedApplication].keyWindow;
+//        CGRect rectInWindow = [cell convertRect:cell.imge.frame toView:window];
+//        [array addObject:NSStringFromCGRect(rectInWindow)];
+//    }
+//    self.rectArray = array;
+    [self countCellRect];
+    NSLog(@"%@", _rectArray);
 }
 
 @end

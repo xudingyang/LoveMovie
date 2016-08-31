@@ -12,4 +12,5 @@
 @interface DYPhotoCollectionViewCell : UICollectionViewCell
 /** DYPotoes */
 @property (strong, nonatomic) DYPotoes *photo;
+@property (weak, nonatomic) IBOutlet UIImageView *imge;
 @end

@@ -11,7 +11,9 @@
 @implementation DYReview
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName{
-    return @{@"movie" : @"relatedObj"};
+    return @{@"movie" : @"relatedObj",
+             @"cellID" : @"id"
+             };
 }
 
 @end

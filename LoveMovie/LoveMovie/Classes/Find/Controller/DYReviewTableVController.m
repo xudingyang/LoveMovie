@@ -13,7 +13,8 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import "DYReviewTableVCell.h"
-
+#import "DYDetailReviewViewController.h"
+#import "DYMovieInReview.h"
 @interface DYReviewTableVController ()
 /** manager */
 @property (strong, nonatomic) AFHTTPSessionManager *manager;
@@ -63,6 +64,12 @@ static NSString * const identifier = @"DYReviewTableViewCell";
     DYReviewHeaderView *header = [DYReviewHeaderView reviewHeaderView];
     header.review = self.bigImageReview;
     header.height = 220;
+    header.tapReview = ^(NSInteger review_ID, NSString *movieName){
+        DYDetailReviewViewController *detailReviewVC = [[DYDetailReviewViewController alloc] init];
+        detailReviewVC.reviewID = review_ID;
+        detailReviewVC.movieName = movieName;
+        [self.navigationController pushViewController:detailReviewVC animated:YES];
+    };
     self.tableView.tableHeaderView = header;
 }
 
@@ -143,6 +150,15 @@ static NSString * const identifier = @"DYReviewTableViewCell";
     DYReview *review = self.reviews[indexPath.row];
     cell.review = review;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    DYReview *review = self.reviews[indexPath.row];
+    DYDetailReviewViewController *detailReviewVC = [[DYDetailReviewViewController alloc] init];
+    detailReviewVC.reviewID = review.cellID;
+    DYMovieInReview *movie = review.movie;
+    detailReviewVC.movieName = movie.title;
+    [self.navigationController pushViewController:detailReviewVC animated:YES];
 }
 
 - (void)dealloc{

@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @class DYReview;
+
 @interface DYReviewHeaderView : UIView
 /** DYReview */
 @property (strong, nonatomic) DYReview *review;
+/** block */
+@property (copy, nonatomic) void (^tapReview)(NSInteger review_ID, NSString *movieName);
 
 + (instancetype)reviewHeaderView;
 @end

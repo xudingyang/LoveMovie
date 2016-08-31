@@ -64,4 +64,6 @@
 @property (copy, nonatomic) NSString *summary;
 /** DYMovieInReview模型 */
 @property (strong, nonatomic) DYMovieInReview *movie;
+/** 下次cell的id */
+@property (assign, nonatomic) NSInteger cellID;
 @end

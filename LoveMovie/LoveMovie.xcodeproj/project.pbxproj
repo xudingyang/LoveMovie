@@ -75,6 +75,8 @@
 		8A5505DC1D007FB500A2233D /* DYGoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5505DB1D007FB500A2233D /* DYGoodItem.m */; };
 		8A5505DF1D00915B00A2233D /* DYSqureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5505DE1D00915B00A2233D /* DYSqureButton.m */; };
 		8A5BE7541CEC91CD002D2000 /* DYComingMoiveGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BE7531CEC91CD002D2000 /* DYComingMoiveGroup.m */; };
+		8A61045C1D61A9FC006D7D9C /* DYDetailReviewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A61045B1D61A9FC006D7D9C /* DYDetailReviewHeader.m */; };
+		8A61045E1D61AA11006D7D9C /* DYDetailReviewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A61045D1D61AA11006D7D9C /* DYDetailReviewHeader.xib */; };
 		8A6905C81D04143900F3DB4F /* DYScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6905C61D04143900F3DB4F /* DYScanQRViewController.m */; };
 		8A6905C91D04143900F3DB4F /* DYScanQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6905C71D04143900F3DB4F /* DYScanQRViewController.xib */; };
 		8A6905CC1D044FB200F3DB4F /* DYTopWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6905CB1D044FB200F3DB4F /* DYTopWindowViewController.m */; };
@@ -98,6 +100,7 @@
 		8A77912A1CE9D030001B3DF8 /* DYShowingMovieTableVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A7791281CE9D030001B3DF8 /* DYShowingMovieTableVCell.xib */; };
 		8A77912D1CE9ECAC001B3DF8 /* DYHotMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A77912C1CE9ECAC001B3DF8 /* DYHotMovie.m */; };
 		8A7791301CEA0715001B3DF8 /* NSDate+DYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A77912F1CEA0715001B3DF8 /* NSDate+DYExt.m */; };
+		8A96A6501D6A9AD0002ECBB9 /* DYShowPhotoBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A96A64F1D6A9AD0002ECBB9 /* DYShowPhotoBaseView.m */; };
 		8A96AB091CE20DF500E10BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A96AB081CE20DF500E10BEB /* Assets.xcassets */; };
 		8A96AB171CE20DF500E10BEB /* LoveMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A96AB161CE20DF500E10BEB /* LoveMovieTests.m */; };
 		8A96AB221CE20DF500E10BEB /* LoveMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A96AB211CE20DF500E10BEB /* LoveMovieUITests.m */; };
@@ -132,6 +135,9 @@
 		8AA7F9C81CEEBD01009069DC /* DYNewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA7F9C71CEEBD01009069DC /* DYNewsHeaderView.xib */; };
 		8AA7F9CB1CEEBE66009069DC /* DYNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7F9CA1CEEBE66009069DC /* DYNews.m */; };
 		8AB467491CE87ADF004AC3C4 /* DYIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB467481CE87ADF004AC3C4 /* DYIndicatorView.m */; };
+		8ABE31B61D5B032E00C27423 /* DYDetailReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE31B51D5B032E00C27423 /* DYDetailReview.m */; };
+		8ABE31BA1D5B1C0D00C27423 /* DYDetailReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE31B81D5B1C0D00C27423 /* DYDetailReviewViewController.m */; };
+		8ABE31BB1D5B1C0D00C27423 /* DYDetailReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABE31B91D5B1C0D00C27423 /* DYDetailReviewViewController.xib */; };
 		8AD0D6EA1D0294F9005EE478 /* DYZiXun.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0D6E91D0294F9005EE478 /* DYZiXun.m */; };
 		8AD0D6ED1D029A33005EE478 /* DYMovieInZiXun.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0D6EC1D029A33005EE478 /* DYMovieInZiXun.m */; };
 		8AD0D6F01D02A583005EE478 /* DYMovieInBangDan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0D6EF1D02A583005EE478 /* DYMovieInBangDan.m */; };
@@ -177,6 +183,8 @@
 		8AE2F8331CF719CB000A4487 /* DYPhotoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2F8321CF719CB000A4487 /* DYPhotoesViewController.m */; };
 		8AE2F8371CF71E63000A4487 /* DYHomeTrailerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2F8351CF71E63000A4487 /* DYHomeTrailerTableViewCell.m */; };
 		8AE2F8381CF71E63000A4487 /* DYHomeTrailerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE2F8361CF71E63000A4487 /* DYHomeTrailerTableViewCell.xib */; };
+		8AFBC4971D62B05A00B6DF3E /* DYDetatilReviewComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFBC4961D62B05A00B6DF3E /* DYDetatilReviewComment.m */; };
+		8AFBC4991D62B06600B6DF3E /* DYDetatilReviewComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFBC4981D62B06600B6DF3E /* DYDetatilReviewComment.xib */; };
 		8AFC954C1D02FF6A00850041 /* DYCaiDianYingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC954B1D02FF6A00850041 /* DYCaiDianYingView.m */; };
 		8AFC954E1D02FF7500850041 /* DYCaiDianYingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFC954D1D02FF7500850041 /* DYCaiDianYingView.xib */; };
 		8AFC95521D032E5C00850041 /* DYPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC95501D032E5C00850041 /* DYPhotoCollectionViewCell.m */; };
@@ -319,6 +327,9 @@
 		8A5505DE1D00915B00A2233D /* DYSqureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYSqureButton.m; sourceTree = "<group>"; };
 		8A5BE7521CEC91CD002D2000 /* DYComingMoiveGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYComingMoiveGroup.h; sourceTree = "<group>"; };
 		8A5BE7531CEC91CD002D2000 /* DYComingMoiveGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYComingMoiveGroup.m; sourceTree = "<group>"; };
+		8A61045A1D61A9FC006D7D9C /* DYDetailReviewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYDetailReviewHeader.h; sourceTree = "<group>"; };
+		8A61045B1D61A9FC006D7D9C /* DYDetailReviewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYDetailReviewHeader.m; sourceTree = "<group>"; };
+		8A61045D1D61AA11006D7D9C /* DYDetailReviewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYDetailReviewHeader.xib; sourceTree = "<group>"; };
 		8A6905C51D04143900F3DB4F /* DYScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYScanQRViewController.h; sourceTree = "<group>"; };
 		8A6905C61D04143900F3DB4F /* DYScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYScanQRViewController.m; sourceTree = "<group>"; };
 		8A6905C71D04143900F3DB4F /* DYScanQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYScanQRViewController.xib; sourceTree = "<group>"; };
@@ -358,6 +369,8 @@
 		8A77912C1CE9ECAC001B3DF8 /* DYHotMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYHotMovie.m; sourceTree = "<group>"; };
 		8A77912E1CEA0715001B3DF8 /* NSDate+DYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DYExt.h"; sourceTree = "<group>"; };
 		8A77912F1CEA0715001B3DF8 /* NSDate+DYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DYExt.m"; sourceTree = "<group>"; };
+		8A96A64E1D6A9AD0002ECBB9 /* DYShowPhotoBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYShowPhotoBaseView.h; sourceTree = "<group>"; };
+		8A96A64F1D6A9AD0002ECBB9 /* DYShowPhotoBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYShowPhotoBaseView.m; sourceTree = "<group>"; };
 		8A96AAF91CE20DF500E10BEB /* LoveMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A96AB081CE20DF500E10BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A96AB0D1CE20DF500E10BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -423,6 +436,11 @@
 		8AA7F9CA1CEEBE66009069DC /* DYNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNews.m; sourceTree = "<group>"; };
 		8AB467471CE87ADF004AC3C4 /* DYIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYIndicatorView.h; sourceTree = "<group>"; };
 		8AB467481CE87ADF004AC3C4 /* DYIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYIndicatorView.m; sourceTree = "<group>"; };
+		8ABE31B41D5B032E00C27423 /* DYDetailReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYDetailReview.h; sourceTree = "<group>"; };
+		8ABE31B51D5B032E00C27423 /* DYDetailReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYDetailReview.m; sourceTree = "<group>"; };
+		8ABE31B71D5B1C0D00C27423 /* DYDetailReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYDetailReviewViewController.h; sourceTree = "<group>"; };
+		8ABE31B81D5B1C0D00C27423 /* DYDetailReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYDetailReviewViewController.m; sourceTree = "<group>"; };
+		8ABE31B91D5B1C0D00C27423 /* DYDetailReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYDetailReviewViewController.xib; sourceTree = "<group>"; };
 		8AD0D6E81D0294F9005EE478 /* DYZiXun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYZiXun.h; sourceTree = "<group>"; };
 		8AD0D6E91D0294F9005EE478 /* DYZiXun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYZiXun.m; sourceTree = "<group>"; };
 		8AD0D6EB1D029A33005EE478 /* DYMovieInZiXun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMovieInZiXun.h; sourceTree = "<group>"; };
@@ -498,6 +516,9 @@
 		8AE2F8341CF71E63000A4487 /* DYHomeTrailerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYHomeTrailerTableViewCell.h; sourceTree = "<group>"; };
 		8AE2F8351CF71E63000A4487 /* DYHomeTrailerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYHomeTrailerTableViewCell.m; sourceTree = "<group>"; };
 		8AE2F8361CF71E63000A4487 /* DYHomeTrailerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYHomeTrailerTableViewCell.xib; sourceTree = "<group>"; };
+		8AFBC4951D62B05A00B6DF3E /* DYDetatilReviewComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYDetatilReviewComment.h; sourceTree = "<group>"; };
+		8AFBC4961D62B05A00B6DF3E /* DYDetatilReviewComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYDetatilReviewComment.m; sourceTree = "<group>"; };
+		8AFBC4981D62B06600B6DF3E /* DYDetatilReviewComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYDetatilReviewComment.xib; sourceTree = "<group>"; };
 		8AFC954A1D02FF6A00850041 /* DYCaiDianYingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCaiDianYingView.h; sourceTree = "<group>"; };
 		8AFC954B1D02FF6A00850041 /* DYCaiDianYingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCaiDianYingView.m; sourceTree = "<group>"; };
 		8AFC954D1D02FF7500850041 /* DYCaiDianYingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYCaiDianYingView.xib; sourceTree = "<group>"; };
@@ -582,6 +603,8 @@
 				8AA1B5E21CEE0EF1000D3757 /* DYReview.m */,
 				8AA1B5E41CEE11B5000D3757 /* DYMovieInReview.h */,
 				8AA1B5E51CEE11B5000D3757 /* DYMovieInReview.m */,
+				8ABE31B41D5B032E00C27423 /* DYDetailReview.h */,
+				8ABE31B51D5B032E00C27423 /* DYDetailReview.m */,
 			);
 			name = Review;
 			sourceTree = "<group>";
@@ -629,6 +652,9 @@
 			children = (
 				8AA1B5C41CED89D1000D3757 /* DYReviewTableVController.h */,
 				8AA1B5C51CED89D1000D3757 /* DYReviewTableVController.m */,
+				8ABE31B71D5B1C0D00C27423 /* DYDetailReviewViewController.h */,
+				8ABE31B81D5B1C0D00C27423 /* DYDetailReviewViewController.m */,
+				8ABE31B91D5B1C0D00C27423 /* DYDetailReviewViewController.xib */,
 			);
 			name = Review;
 			sourceTree = "<group>";
@@ -1161,6 +1187,8 @@
 				8AFC954F1D032E5C00850041 /* DYPhotoCollectionViewCell.h */,
 				8AFC95501D032E5C00850041 /* DYPhotoCollectionViewCell.m */,
 				8AFC95511D032E5C00850041 /* DYPhotoCollectionViewCell.xib */,
+				8A96A64E1D6A9AD0002ECBB9 /* DYShowPhotoBaseView.h */,
+				8A96A64F1D6A9AD0002ECBB9 /* DYShowPhotoBaseView.m */,
 			);
 			name = MovieDetail;
 			sourceTree = "<group>";
@@ -1264,6 +1292,12 @@
 				8AA7F9B91CEE9A10009069DC /* DYReviewTableVCell.h */,
 				8AA7F9BA1CEE9A10009069DC /* DYReviewTableVCell.m */,
 				8AA7F9BB1CEE9A10009069DC /* DYReviewTableVCell.xib */,
+				8A61045A1D61A9FC006D7D9C /* DYDetailReviewHeader.h */,
+				8A61045B1D61A9FC006D7D9C /* DYDetailReviewHeader.m */,
+				8A61045D1D61AA11006D7D9C /* DYDetailReviewHeader.xib */,
+				8AFBC4951D62B05A00B6DF3E /* DYDetatilReviewComment.h */,
+				8AFBC4961D62B05A00B6DF3E /* DYDetatilReviewComment.m */,
+				8AFBC4981D62B06600B6DF3E /* DYDetatilReviewComment.xib */,
 			);
 			name = ReviewView;
 			sourceTree = "<group>";
@@ -1307,12 +1341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A96AB261CE20DF500E10BEB /* Build configuration list for PBXNativeTarget "LoveMovie" */;
 			buildPhases = (
-				6312AEFEE69946DFC7EEAEDE /* 📦 Check Pods Manifest.lock */,
+				6312AEFEE69946DFC7EEAEDE /* [CP] Check Pods Manifest.lock */,
 				8A96AAF51CE20DF500E10BEB /* Sources */,
 				8A96AAF61CE20DF500E10BEB /* Frameworks */,
 				8A96AAF71CE20DF500E10BEB /* Resources */,
-				BBFE8873FD34C7C703454B75 /* 📦 Embed Pods Frameworks */,
-				844C3DBAA773BB8CB9B1FE17 /* 📦 Copy Pods Resources */,
+				BBFE8873FD34C7C703454B75 /* [CP] Embed Pods Frameworks */,
+				844C3DBAA773BB8CB9B1FE17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1371,7 +1405,7 @@
 				TargetAttributes = {
 					8A96AAF81CE20DF500E10BEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = HX26QT66FR;
+						DevelopmentTeam = 5DNYFWLMD4;
 					};
 					8A96AB111CE20DF500E10BEB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1408,10 +1442,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFBC4991D62B06600B6DF3E /* DYDetatilReviewComment.xib in Resources */,
 				8A01B03F1D012E1400796ABB /* DYMallTableViewCell.xib in Resources */,
 				8AA7F9C81CEEBD01009069DC /* DYNewsHeaderView.xib in Resources */,
 				8AA1B5E01CEE0B83000D3757 /* DYReviewHeaderView.xib in Resources */,
 				8AD0D7111D02B8AB005EE478 /* DYYingPingView.xib in Resources */,
+				8ABE31BB1D5B1C0D00C27423 /* DYDetailReviewViewController.xib in Resources */,
 				8AD7E4931CF7E10800A76047 /* DYNetCommentTableViewCell.xib in Resources */,
 				8A73E28C1CE463F500CC81F6 /* DYLoginViewController.xib in Resources */,
 				8AA1B5D31CEDAF4A000D3757 /* DYTrailerHeaderView.xib in Resources */,
@@ -1446,6 +1482,7 @@
 				8A7312FE1CEB1D0400CDDBCF /* DYAttentionColletionVCell.xib in Resources */,
 				8AE2F82D1CF6D6C7000A4487 /* DYCreditsTableViewCell.xib in Resources */,
 				8AD7E4D91CF825FB00A76047 /* DYShowPictureViewController.xib in Resources */,
+				8A61045E1D61AA11006D7D9C /* DYDetailReviewHeader.xib in Resources */,
 				8A5505D31D00167D00A2233D /* DYCinemaTableViewCell.xib in Resources */,
 				8A0A169D1CE2CF1B00308C55 /* Me.storyboard in Resources */,
 				8AD0D70C1D02B872005EE478 /* DYBangDanView.xib in Resources */,
@@ -1477,14 +1514,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6312AEFEE69946DFC7EEAEDE /* 📦 Check Pods Manifest.lock */ = {
+		6312AEFEE69946DFC7EEAEDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1492,14 +1529,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		844C3DBAA773BB8CB9B1FE17 /* 📦 Copy Pods Resources */ = {
+		844C3DBAA773BB8CB9B1FE17 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1507,14 +1544,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoveMovie/Pods-LoveMovie-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBFE8873FD34C7C703454B75 /* 📦 Embed Pods Frameworks */ = {
+		BBFE8873FD34C7C703454B75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1570,6 +1607,7 @@
 				8A4AAF0C1CF004A1007788A7 /* DYTicketListTableViewCell.m in Sources */,
 				8AE2F81D1CF68DD2000A4487 /* DYNetFriendComment.m in Sources */,
 				8AA1B5D11CEDAF0F000D3757 /* DYTrailerHeaderView.m in Sources */,
+				8ABE31B61D5B032E00C27423 /* DYDetailReview.m in Sources */,
 				8AD937821CEF5BD4009328AE /* DYGlobalTicketListVC.m in Sources */,
 				8A35BE3C1CFD5B2A00592366 /* DYVideoPlayViewController.m in Sources */,
 				8A4AAF391CF043AF007788A7 /* DYMovieDetailVC.m in Sources */,
@@ -1588,12 +1626,15 @@
 				8A336F941CF3E04100DDFED1 /* DYMovieHeader.m in Sources */,
 				8AE2F8281CF6D699000A4487 /* DYCreditTableVController.m in Sources */,
 				8A7312FD1CEB1D0400CDDBCF /* DYAttentionColletionVCell.m in Sources */,
+				8A96A6501D6A9AD0002ECBB9 /* DYShowPhotoBaseView.m in Sources */,
 				8AD7E4DC1CF83A9E00A76047 /* ScrollImage.m in Sources */,
 				8A96AB651CE212E900E10BEB /* DYTabBar.m in Sources */,
+				8AFBC4971D62B05A00B6DF3E /* DYDetatilReviewComment.m in Sources */,
 				8AA1B5BD1CED8931000D3757 /* DYNewsTableVController.m in Sources */,
 				8A73E28B1CE463F500CC81F6 /* DYLoginViewController.m in Sources */,
 				8A19FAC01CF53D6B001C9520 /* DYComment.m in Sources */,
 				8A02E7B21CE6024800A57A7B /* DYComingMovieVC.m in Sources */,
+				8ABE31BA1D5B1C0D00C27423 /* DYDetailReviewViewController.m in Sources */,
 				8A336FA41CF430BB00DDFED1 /* DYPhotoType.m in Sources */,
 				8A75AF7C1CE31DD9007F69B3 /* DYConst.m in Sources */,
 				8AA1B5E61CEE11B5000D3757 /* DYMovieInReview.m in Sources */,
@@ -1604,6 +1645,7 @@
 				8A01B0481D01890B00796ABB /* DYHomeHeaderView.m in Sources */,
 				8A73E2901CE4642300CC81F6 /* DYRegistViewController.m in Sources */,
 				8A336FBA1CF47C2700DDFED1 /* DYEventsView.m in Sources */,
+				8A61045C1D61A9FC006D7D9C /* DYDetailReviewHeader.m in Sources */,
 				8AD7E4D81CF825FB00A76047 /* DYShowPictureViewController.m in Sources */,
 				8A96AB621CE2125B00E10BEB /* DYTabBarController.m in Sources */,
 				8A75AF781CE3125E007F69B3 /* DYMeHeaderView.m in Sources */,
