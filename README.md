@@ -10,4 +10,4 @@
 ## 开发过程
 
 ### 首页 
-![image](https://github.com/xudingyang/LoveMovie/blob/master/pics/首页.png)
+
