@@ -11,3 +11,14 @@
 
 ### 首页 
 ![image](https://github.com/xudingyang/LoveMovie/blob/master/pics/首页.jpeg)
+
+### 购票
+![image](https://github.com/xudingyang/LoveMovie/blob/master/pics/购票.jpeg)
+
+### 商城
+
+
+### 发现
+
+
+### 我的
