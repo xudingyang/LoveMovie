@@ -39,6 +39,9 @@
 /** rightImageView */
 @property (weak, nonatomic) UIImageView *rightImageView;
 
+/** canDownload标记是否下载完成。若图片未下载完成，则不许保存到相册 */
+@property (assign, nonatomic) BOOL canDownload;
+
 /** 保存按钮 */
 @property (weak, nonatomic) UIButton *saveBtn;
 @end
@@ -107,6 +110,8 @@
     rightImageView.frame = CGRectMake(DYScreenW*2, (DYScreenH-rightHeight)*0.5, DYScreenW, rightHeight);
     [scrollView addSubview:rightImageView];
     _rightImageView = rightImageView;
+    
+    _canDownload = YES;
 }
 
 #pragma mark - 设置上边的图片下标指示器
@@ -138,6 +143,11 @@
 }
 
 - (void)savaBtnClick {
+    if (_canDownload == NO) {
+        [SVProgressHUD setMinimumDismissTimeInterval:1];
+        [SVProgressHUD showSuccessWithStatus:@"图片未加载完毕..."];
+        return;
+    }
     // 写到相册中
     UIImageWriteToSavedPhotosAlbum(self.centerImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 }
@@ -170,7 +180,20 @@
     rightImageIndex = (self.currecntIndex + 1) % self.iconArray.count;
     
     [self.leftImageView sd_setImageWithURL:[NSURL URLWithString:self.iconArray[leftImageIndex]] placeholderImage:[UIImage imageNamed:@"order_review_upload_img"]];
-    [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:self.iconArray[self.currecntIndex]] placeholderImage:[UIImage imageNamed:@"order_review_upload_img"]];
+    _canDownload = NO;
+    [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:self.iconArray[self.currecntIndex]] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if (!image) {
+            _canDownload = YES;
+            self.centerImageView.image = image;
+        } else {
+            _canDownload = NO;
+            self.centerImageView.image = [UIImage imageNamed:@"order_review_upload_img"];
+        }
+    }];
+    
+    [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:self.iconArray[self.currecntIndex]] placeholderImage:[UIImage imageNamed:@"order_review_upload_img"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        _canDownload = YES;
+    }];
     [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:self.iconArray[rightImageIndex]] placeholderImage:[UIImage imageNamed:@"order_review_upload_img"]];
     
     CGFloat leftHeight = DYScreenW / self.leftImageView.image.size.width * self.leftImageView.image.size.height;

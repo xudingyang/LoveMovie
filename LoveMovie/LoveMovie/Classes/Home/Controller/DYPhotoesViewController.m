@@ -251,33 +251,15 @@ static NSString * const identifier = @"photoCollectionViewCell";
 
 // 计算滑动之时，cell的位置
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-//    NSMutableArray<NSString *> *array = [NSMutableArray<NSString *> array];
-//    for (NSInteger index = 0; index < self.photoArray.count; index++) {
-//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-//        DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-//        UIWindow* window = [UIApplication sharedApplication].keyWindow;
-//        CGRect rectInWindow = [cell convertRect:cell.imge.frame toView:window];
-//        [array addObject:NSStringFromCGRect(rectInWindow)];
-//    }
-//    self.rectArray = array;
+ 
     [self countCellRect];
 }
 
 // 此方法会在cell显示出来后再执行，所以这里可以计算滑动之前cell的位置
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    NSMutableArray<NSString *> *array = [NSMutableArray<NSString *> array];
-//    for (NSInteger index = 0; index < self.photoArray.count; index++) {
-//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-//        DYPhotoCollectionViewCell *cell = (DYPhotoCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-//        UIWindow* window = [UIApplication sharedApplication].keyWindow;
-//        CGRect rectInWindow = [cell convertRect:cell.imge.frame toView:window];
-//        [array addObject:NSStringFromCGRect(rectInWindow)];
-//    }
-//    self.rectArray = array;
     [self countCellRect];
-    NSLog(@"%@", _rectArray);
+//    NSLog(@"%@", _rectArray);
 }
 
 @end
