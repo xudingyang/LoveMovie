@@ -41,14 +41,11 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    
-    
 }
 
 // 这是为了保证，模态的控制器退出后，本控制器顶部保持原样
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-
     [self scrollViewDidScroll:self.tableView];
 }
 
