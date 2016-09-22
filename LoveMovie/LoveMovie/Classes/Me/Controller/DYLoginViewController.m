@@ -25,9 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.navigationItem.title = @"正在登录";
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated{

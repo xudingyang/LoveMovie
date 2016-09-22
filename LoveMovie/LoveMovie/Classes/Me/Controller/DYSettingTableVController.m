@@ -28,7 +28,6 @@
 - (CGFloat)getCacheSize{
     // 图片缓存(他这里是字节为单位，到时候要换成兆)
     CGFloat imageCacheSize = [[SDImageCache sharedImageCache] getSize];
-    
     return imageCacheSize / 1000 / 1000;
 }
 
